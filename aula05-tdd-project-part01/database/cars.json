@@ -1,0 +1,23 @@
+[
+  {
+    "id": "292b0c87-eec8-4f48-b0f3-8e01fe77979c",
+    "name": "Silverado",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "9bfc71d8-d5f8-416b-8eb9-7ba30c6c685b",
+    "name": "F-150",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "641532ba-dc5b-4b2d-99d9-689203e00442",
+    "name": "Volt",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  }
+]
