@@ -1,0 +1,23 @@
+[
+  {
+    "id": "589c0e45-b7ed-4311-ab25-a9a9813afe84",
+    "name": "Altima",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "39bcca5b-192f-4ab5-8a81-05a65e0f2144",
+    "name": "F-150",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "daebde1b-01fe-4a4b-9b1e-8a17029af138",
+    "name": "Model T",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  }
+]
