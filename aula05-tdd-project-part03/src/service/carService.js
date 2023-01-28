@@ -25,7 +25,6 @@ class CarService {
 
   async getAvailableCar(carCategory) {
     const carId = this.chooseRandomCar(carCategory)
-    console.log('carId', carId)
     const car = await this.carRepository.find(carId)
     return car
   }
@@ -50,12 +49,12 @@ class CarService {
     const options = { year: 'numeric', month: 'long', day: 'numeric'}
     const dueDate = today.toLocaleDateString('pt-br', options)
 
-    const transaction = new Transaction({
+    const transaction = new Transaction(
       customer,
       car,
       amount,
       dueDate
-    })
+    )
 
     return transaction
   }

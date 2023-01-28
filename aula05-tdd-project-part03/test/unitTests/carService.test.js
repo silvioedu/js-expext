@@ -108,8 +108,10 @@ describe('CarService Suit Tests', () => {
       price: 37.6,
       carIds: [car.id]
     }
-    const customer = Object.create(mocks.validCustomer)
-    customer.age = 50
+    const customer = {
+      ...mocks.validCustomer,
+      age: 50
+    }
 
     const numberOfDays = 5
     const dueDate = '10 de novembro de 2020'
@@ -123,18 +125,19 @@ describe('CarService Suit Tests', () => {
     ).resolves(car)
 
     const expectedAmount = carService.currencyFormat.format(244.40)
+    
     const result = await carService.rent(
       customer,
       carCategory,
       numberOfDays
     )
  
-    const expected = new Transaction({
+    const expected = new Transaction(
       customer,
       car,
-      amount: expectedAmount,
-      dueDate,
-    })
+      amount = expectedAmount,
+      dueDate
+    )
  
     expect(result).to.be.deep.equal(expected)
   })
